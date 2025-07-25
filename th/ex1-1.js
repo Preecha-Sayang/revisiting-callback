@@ -5,9 +5,15 @@
     - กระบวนการทางคณิตศาสตร์
 - ให้เขียน function ที่ทำงานตามที่โจทย์กำหนด
 */
+const add = (a,b) =>a+b;
+const subtract =(a,b) =>a-b
+const multiply=(a,b) =>a*b
+const divide=(a,b)=>{return b!==0? a/b :"Cannot divide by zero"} 
 
 // Start Coding Here
-
+function calculate(a, b, c){
+    return c(a,b)
+}
 
 // เมื่อ function นี้ทำงานจะเห็นผลลัพธ์ดังนี้
 console.log(calculate(10, 5, add)); // 15
